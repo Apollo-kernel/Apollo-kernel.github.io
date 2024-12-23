@@ -6,8 +6,6 @@ tags: STM32
 
 ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media53fc30198d3e4a2ab7e86567db310641.jpeg)
 
-{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-
 {% video https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232057491.mov %}
 
 <blockquote>
