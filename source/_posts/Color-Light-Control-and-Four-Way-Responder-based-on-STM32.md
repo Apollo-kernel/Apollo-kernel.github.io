@@ -1,7 +1,10 @@
 ---
 title: Color Light Control and Four Way Responder based on STM32
 date: 2024-12-21 11:07:41
-tags: STM32
+tags: Embedded System
+categories: [Projects]
+thumbnail: https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media53fc30198d3e4a2ab7e86567db310641.jpeg
+top: true
 ---
 
 ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media53fc30198d3e4a2ab7e86567db310641.jpeg)
@@ -10,7 +13,7 @@ tags: STM32
 
 <blockquote>
 <p>
-若要实现同样效果请看源码:<a href="https://gitee.com/apollo_666/Color-Light-Control-and-Four-Way-Responder">
+The firmware code is located at:<a href="https://gitee.com/apollo_666/Color-Light-Control-and-Four-Way-Responder">
 gitee.com/apollo_666/Color-Light-Control-and-Four-Way-Responder</a>
 </blockquote>
 

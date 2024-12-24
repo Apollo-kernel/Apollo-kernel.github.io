@@ -261,7 +261,7 @@ article:
       author:
         avatar: https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232321149.png
         name: Apollo
-        url: apollo6.me/
+        url: https://apollo6.me/
       # 文章创建日期
       date:
         icon: fa-solid fa-calendar-alt
@@ -522,7 +522,7 @@ sidebar:
       sticky: true
       header:
         icon: fa-solid fa-list
-        title: 本文目录
+        title: Contents
       list_number: false
       min_depth: 2
       max_depth: 5
@@ -539,7 +539,7 @@ sidebar:
       display: [desktop] # [desktop, mobile]
       header:
         icon: fa-solid fa-folder-open
-        title: 文章分类
+        title: Categories
         url: /blog/categories/
     # ---------------------------------------
     # tagcloud widget
@@ -548,7 +548,7 @@ sidebar:
       display: [desktop, mobile] # [desktop, mobile]
       header:
         icon: fa-solid fa-tags
-        title: 热门标签
+        title: Tags
         url: /blog/tags/
       min_font: 14
       max_font: 24
@@ -819,7 +819,7 @@ plugins:
     type: playlist    # song, playlist, album, search, artist
     id: 6927872292    # song id / playlist id / album id / search keyword
     # Optional
-    fixed: false      # enable fixed mode
+    fixed: true      # enable fixed mode
     theme: '#1BCDFC'  # main color
     autoplay: false   # audio autoplay
     order: list       # player play order, values: 'list', 'random'
@@ -827,7 +827,7 @@ plugins:
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
     list_max_height: 320px # list max height
     list_folded: true
-    autoHide: false    # hide automaticaly
+    autoHide: true    # hide automaticaly
 
   # Pjax
   pjax:
