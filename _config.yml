@@ -6,8 +6,9 @@
 title: Apollo's Blog
 subtitle: 'Hexo'
 description: 'blog'
-keywords:
+keywords: 
 author: Apollo
+favicon: https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412252056917.svg
 language: en
 timezone: ''
 
