@@ -511,7 +511,7 @@ sidebar:
         - icon: fa-solid fa-envelope
           url: yuyang.apollo@gmail.com
         - icon: fab fa-github
-          url: github.com/Apollo-kernel/Apollo-kernel.github.io/
+          url: https://github.com/Apollo-kernel/Apollo-kernel.github.io/
         # - icon: fa-solid fa-headphones-alt
         #   url: /
     # ---------------------------------------
