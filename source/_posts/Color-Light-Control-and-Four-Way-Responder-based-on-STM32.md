@@ -7,7 +7,8 @@ thumbnail: https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media53fc30198
 top: true
 ---
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media53fc30198d3e4a2ab7e86567db310641.jpeg)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media53fc30198d3e4a2ab7e86567db310641.jpeg)
+{% endgallery %}
 
 {% video https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232057491.mov %}
 
@@ -80,11 +81,13 @@ SSD1306_0.96寸OLED显示屏_13.5¥+按键*4_0.56¥+按键帽_0.2¥+发光红色
 
 ### 3. 总体方案需结合的参考电路
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/mediaf2dbcb52be7b433b83916972492eaa77.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/mediaf2dbcb52be7b433b83916972492eaa77.png)
+{% endgallery %}
 
 ### 4. 总体方案原理框图
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media3e93a27742de4bedbd2abc4c231dbfd0.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media3e93a27742de4bedbd2abc4c231dbfd0.png)
+{% endgallery %}
 
 
 
@@ -117,7 +120,8 @@ M = Most Use Environment (Level A - Low Density),密度等级M：
 最大焊盘伸出——适用于高元件密度应用中，典型的像便携/手持式或暴露在高冲击或震动环境中的产品。焊接结构是最坚固的，并且在需要的情况下很容易进行返修。
 
 电源电路对于一个控制系统来说极其重要，关系到整个系统是否能够正常工作， 因此选择了ME6211C33M5G-N这款LDO为电源电路的核心。
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/mediae0de4317988946e19c316b91dd71462b.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/mediae0de4317988946e19c316b91dd71462b.png)
+{% endgallery %}
 
 输入滤波电容可以对输入电流滤波，同时防止断电后出现电压倒置。
 
@@ -127,9 +131,11 @@ M = Most Use Environment (Level A - Low Density),密度等级M：
 
 ### 2. 微控制器电路
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media8e3352ba05dd4e1aa1b3ce84a3d8b659.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media8e3352ba05dd4e1aa1b3ce84a3d8b659.png)
+{% endgallery %}
 退耦电容并接于放大电路的电源正负极之间，防止由电源内阻形成的正反馈而引起的寄生振荡。
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media15b9e0a86d5746078583a65630f2f6ab.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media15b9e0a86d5746078583a65630f2f6ab.png)
+{% endgallery %}
 20pF起振电容是8MHz无源晶振正常震荡需要匹配的电容电容无源晶振和电容需尽可能近地靠近微控制器的引脚，以减小输出失真和启动稳定时间，线路太长会增加寄生电容，而且容易发生串扰，而且会影响其他信号线；其他信号线需远离晶振线，因为晶振线路信号跳动频繁，产生的磁场不断变化，附近的线易受到干扰。
 STM32F103C8T6是ST公司的一款ARM Cortex-M3内核的32位微控制器, 封装为LQFP48, 采用0.18μm高度集成的CMOS工艺制造，芯片面积不超过7mm*7mm,属于超大规模集成电路(VLSI)，与早期的SSI、MSI和LSI芯片相比,它具有功能更强、体积更小和功耗更低的显著优势。微控制器芯片上集成了CPU核心、SRAM存储器、Flash闪存、定时器、外设接口等复杂的数字电路,元件数远远超过10万个，它出现标志着集成电路技术的发展达到较高水平，随着技术的不断进步,未来微控制器的集成度还将进一步提高。
 此微控制器所有引脚在非ADC模式下均可承受5V电压，所有引脚都可以提供最高25mA的拉电流或灌电流。在ADC转换范围为0至3.6V，内置温度传感器。引脚总共可提供最高120mA的拉电流或灌电流，3.3V引脚输出不超过500mA的电流，72MHz下工作最大电流32.8mA，最低工作电流可以达到5μA。
@@ -137,20 +143,24 @@ STM32F103C8T6是ST公司的一款ARM Cortex-M3内核的32位微控制器, 封装
 
 ### 3. 彩灯显示电路
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media32f64246a2f942c7abebd21afdbc0c47.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media32f64246a2f942c7abebd21afdbc0c47.png)
+{% endgallery %}
 数码管按发光二极管单元连接方式可分为共阳极数码管和共阴极数码管。
 共阴数码管指将所有发光二极管的阴极接到一起形成公共阴极(COM)的数码管，共阴数码管在应用时应将公共极COM接到地线GND上，当某一字段发光二极管的阳极为高电平时，相应字段就点亮，当某一字段的阳极为低电平时，相应字段就不亮。
 共阳数码管指将所有发光二极管的阳极接到一起形成公共阳极(COM) 的数码管，共阳数码管在应用时应将公共极COM接到高电平，当某一字段发光二极管的阴极为低电平时，相应字段就点亮， 当某一字段的阴极为高电平时，相应字段就不亮。
 如果采用共阴极数码管，由于它的驱动端在非公共端，个数码管需要外加八个上拉电阻。
 如果采用共阳极数码管，由于它的驱动端在公共端，控制一只需要外加一个上拉电阻。
 所以，我们选择采用共阳极数码管。
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/mediac6ff4533d235405cb3704d7b22ebd3da.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/mediac6ff4533d235405cb3704d7b22ebd3da.png)
+{% endgallery %}
 鉴于八个发光二极管总电流在160mA左右，我们选用阻值为220Ω的电阻为上拉电阻,（3.3-2.1）/220=5.45mA，经过测试，彩灯光强满足需求。
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media5bbc3b2e587c45f28eead15c6ee205db.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media5bbc3b2e587c45f28eead15c6ee205db.png)
+{% endgallery %}
 
 ### 4. 顶调电位器电路
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media3d1bbca914624742a9a9d880ede940fd.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media3d1bbca914624742a9a9d880ede940fd.png)
+{% endgallery %}
 模拟地AGND和数字地 DGND采用单点接地，由于星形接地会在一点上连接两种接地，这样高噪声数字电流都会流过数字电源，一直流到数字接地平面，并回到数字电源，同时与敏感的模拟电路隔离。
 我们用的是72MHZ主频的微控制器，72MHz的HCLK经6分频得到ADC_Clock = 72/6 = 12MHz。12位ADC最低转换周期 = 1.5(min Sampling Time)+12=13.5个周期 = 13.5*(1/12MHz) = 1.125us > 1us(最小转换周期) 。12位ADC最高转换速率 = 1/1.125us = 0.88MSPS < 1MSPS(ADC最高转换速率)
 我们的微控制器的型号是STM32F103C8T6，片上共2个ADC，最高12位ADC，最高转换速率1MSPS（最小转换周期1us）
@@ -168,12 +178,14 @@ ADC转换完成的数据从外设到内存的传递采用DMA(Direct Memory Acces
 
 ### 5. 按键电路
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media6396bf31570d4626a0e0d2a8114d18e8.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media6396bf31570d4626a0e0d2a8114d18e8.png)
+{% endgallery %}
 在配置STM32F103C8T6微控制器的管脚为上拉输入模式后，通过软件状态机消抖方案即可控制彩灯序列的起始和实现抢答功能。
 
 ### 6. OLED显示电路
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media38fbdf7268aa49df897c85096c8d301c.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media38fbdf7268aa49df897c85096c8d301c.png)
+{% endgallery %}
 SPI总线Transmit Only Master模式的数据从内存到外设的传递采用DMA(Direct Memory Access)即直接存储器访问方式搬运
 SSD1306芯片作为核心存在于0.96寸OLED显示屏模块内，显示屏作为人机交互界面部分，可以显示输出脉冲信号（彩灯变换)周期和频率，四舍五入到小数点后两位，实时显示四舍五入到个位数的温度。
 
@@ -181,19 +193,26 @@ SSD1306芯片作为核心存在于0.96寸OLED显示屏模块内，显示屏作�
 
 ### 1. 原理图
 
-![1. 原理图](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media913cdd2559af4013a67221e278d153cc.png)
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media6b1f4396749b4d94b8d41b3718d963fe.png)
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232026326.png)
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232027168.png)
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232027470.png)
+{% gallery %} ![1. 原理图](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media913cdd2559af4013a67221e278d153cc.png)
+{% endgallery %}
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media6b1f4396749b4d94b8d41b3718d963fe.png)
+{% endgallery %}
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232026326.png)
+{% endgallery %}
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232027168.png)
+{% endgallery %}
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232027470.png)
+{% endgallery %}
 
 ### 2. 整体装配图
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232028515.jpeg)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232028515.jpeg)
+{% endgallery %}
 
 ### 3.	元器件明细表
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232028628.png)
+{% gallery %} ![](https://cdn.jsdelivr.net/gh/Apollo-kernel/PicGo-kernel/media202412232028628.png)
+{% endgallery %}
 
 ## 五、实际电路指标性能测试
 
