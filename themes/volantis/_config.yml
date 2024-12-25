@@ -163,17 +163,17 @@ article:
     # pin icon for post
     pin_icon: volantis-static/media/twemoji/assets/svg/1f4cc.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
     # auto generate title if not exist
-    auto_title: true # false, true
+    auto_title: false # false, true
     # auto generate excerpt if not exist
-    auto_excerpt: true # false, true
+    auto_excerpt: false # false, true
     # hide excerpt
-    hide_excerpt: false
+    hide_excerpt: true
     # show split line or not
-    line_style: solid # hidden, solid, dashed, dotted
+    line_style: dotted # hidden, solid, dashed, dotted
     # show author
     author: false # true, false
     # show readmore button
-    readmore: auto # auto, always
+    readmore: always # auto, always
   # 文章详情页面的文章卡片本体布局方案
   body:
     # 文章顶部信息
@@ -509,7 +509,7 @@ sidebar:
         # - icon: fa-solid fa-rss
         #   url: /atom.xml
         - icon: fa-solid fa-envelope
-          url: yuyang.apollo@gmail.com
+          url: mailto:me@yuyang.apollo@gmail.com
         - icon: fab fa-github
           url: https://github.com/Apollo-kernel/Apollo-kernel.github.io/
         # - icon: fa-solid fa-headphones-alt
@@ -632,16 +632,12 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, license, info, copyright] # analytics, 
+  layout: [aplayer, social] # analytics, 
   social:
-    - icon: #fa-solid fa-rss
-      url:
-    # or
-    - img:
-      url:
-    # or
-    - avatar:
-      url:
+    - icon: fa-solid fa-envelope
+      url: mailto:me@yuyang.apollo@gmail.com
+    - icon: fab fa-github
+      url: https://github.com/Apollo-kernel/Apollo-kernel.github.io/
   # site source
   source: https://github.com/volantis-x/volantis-docs/
   # analytics using leancloud
