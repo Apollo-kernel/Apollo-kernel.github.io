@@ -4,7 +4,6 @@ date: 2024-12-21 11:07:41
 tags: Embedded System
 categories: [Projects]
 
-top: true
 ---
 
 {% gallery %} 
